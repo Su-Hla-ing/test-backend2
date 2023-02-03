@@ -1,5 +1,5 @@
 const fetchData = async () => {
-    const response = await fetch("http://localhost:3000/fileUpload", {
+    const response = await fetch("https://test-backend2-e0gf.onrender.com/fileUpload", {
         method: "POST",
         body: JSON.stringify({"hello": "This is cat"})
     })
