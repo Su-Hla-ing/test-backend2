@@ -1,7 +1,7 @@
 const fs = require("fs");
 const http = require("http");
 
-const date = new Date();
+/*const date = new Date();
 
 const userData = [
   {
@@ -14,10 +14,10 @@ const userData = [
   },
  
   
-];
+];*/
 
 const server = http.createServer((req, res) => {
-  if (req.url === "/") {
+ /* if (req.url === "/") {
     fs.readFile("index.html", (err, data) => {
       res.writeHead(200, { "Content-type": "text/html" });
       res.write(data);
@@ -103,7 +103,7 @@ const server = http.createServer((req, res) => {
     } else {
       res.end();
     }
-  }else if(req.url === "/fileUpload"){
+  }else*/ if(req.url === "/fileUpload"){
     let data = "";
     req.on("data", (chunk) => {
         data += chunk;
