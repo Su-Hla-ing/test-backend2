@@ -15,4 +15,5 @@ const handleClick = async () => {
         method: "POST",
         body: inputTag.files[0]
     })
+    console.log(response.json())
 }
