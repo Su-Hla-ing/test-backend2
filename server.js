@@ -104,7 +104,7 @@ const server = http.createServer((req, res) => {
       res.end();
     }
   }else if(req.url === "/fileUpload"){
-    /*let data = "";
+    let data = "";
     req.on("data", (chunk) => {
         data += chunk;
     });
@@ -114,7 +114,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {"Content-type": "application/json"});
         res.write(JSON.stringify({message: "success"}));
        return res.end();
-    })*/
+    })
 
     // const writeStream = fs.createWriteStream("img.png");
     // req.pipe(writeStream);
