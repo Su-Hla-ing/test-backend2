@@ -3,7 +3,7 @@ const fetchData = async () => {
         method: "POST",
         body: JSON.stringify({"hello": "This is cat"})
     })
-    console.log(await response.json())
+    // console.log(await response.json())
 }
 fetchData()
 
@@ -15,5 +15,5 @@ const handleClick = async () => {
         method: "POST",
         body: inputTag.files[0]
     })
-    console.log(response.json())
+    // console.log(await response.json())
 }
